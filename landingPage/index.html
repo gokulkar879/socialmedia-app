@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Chat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f403da8c63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css\landingPageStyles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="title">
+        <div class="bigHeading">
+            <i class="fas fa-comments"></i>post Chat
+        </div>
+    </section>
+    <section id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="title_illustration" src="images\title_illustration.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="loginArea">
+
+                        <!-- <div class="container"> -->
+                        <form action="/" method="post">
+                            <input id="signin" type="radio" name="tab" checked="checked" />
+                            <input id="register" type="radio" name="tab" />
+                            <div class="pages">
+                                <div class="page signin">
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-user"></i> USERNAME/EMAIL</div>
+                                        <input class="text" name="userNameEmail" type="text email" placeholder="" autofocus/>
+                                    </div>
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-lock"></i> PASSWORD</div>
+                                        <input class="text" name="password" type="password" placeholder="" />
+                                    </div>
+                                    <div class="input">
+                                        <input type="submit" value="ENTER" />
+                                    </div>
+                                </div>
+                                <div class="page signup">
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-user"></i> NAME</div>
+                                        <input class="text" name="newUserName" type="text" placeholder="" autofocus/>
+                                    </div>
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-envelope"></i> EMAIL</div>
+                                        <input class="text" name="newEmail" type="email" placeholder="" />
+                                    </div>
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-lock"></i>ENTER PASSWORD</div>
+                                        <input class="text" name="newPassword" type="password" placeholder="" />
+                                    </div>
+                                    <div class="input">
+                                        <div class="title"><i class="fas fa-lock"></i>CONFIRM PASSWORD</div>
+                                        <input class="text" name="newConfirmPassword" type="password" placeholder="" />
+                                    </div>
+                                    <div class="input">
+                                        <input type="submit" value="SIGN ME UP!" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs">
+                                <label id="signinTab" class="tab text" for="signin">
+                                    Sign In</label>
+                                <!-- <input id="signinTab" class="tab text" type="submit" value="Sign In"> -->
+                                <label id="registerTab" class="tab text" for="register">
+                                    Register</label>
+                                <!-- <input id="registerTab" class="tab text" type="submit" value="Register"> -->
+                            </div>
+                        </form>
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="scripts\landingPageScript.js"></script>
+</body>
+
+</html>
